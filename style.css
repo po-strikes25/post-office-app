@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5 ease-in-out;
+}
+
+#home-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  height: 100%;
+}
+#left-slide {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  background-color: #000;
+}
+#left-slide header {
+  padding: 0.5rem 1.5rem;
+}
+#left-slide header h1 {
+  padding-bottom: 0.5rem;
+  color: #575a85;
+}
+#left-slide header p {
+  color: #b8bccc;
+}
+.img-div {
+  height: 500px;
+  width: 100%;
+}
+img {
+  height: 100%;
+  width: 100%;
+  transform: scale(0.9);
+}
+#right-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  background-color: #575a85;
+  padding: 1rem 0;
+}
+#right-slide h1 {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: #b8bccc;
+}
+#right-slide h1 span {
+  color: #fff;
+}
+#btn {
+  width: 250px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #575a85;
+  color: #b8bccc;
+  border: 1px solid #b8bccc;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#address-details-container {
+  display: none;
+  background-color: #000;
+  color: #b8bccc;
+}
+#map-container {
+  width: 100%;
+}
+#map-container h2 {
+  padding: 2rem 1rem 0rem;
+  color: rgba(184, 188, 204, 0.5);
+  font-size: 2.125rem !important;
+  text-align: left !important;
+}
+#location {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  padding: 3rem 1rem;
+  gap: 5px;
+}
+#location .row span {
+  font-size: 1.2rem;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+#location .row p {
+  height: 100px;
+}
+#location .row > p {
+  padding-bottom: 5px;
+  font-family: Inter;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.map-frame {
+  padding: 0 2rem;
+  background-color: #575a85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+.map-frame h1 {
+  padding: 1rem 0;
+}
+#user-info h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding: 2rem 0;
+}
+.text-heading {
+  color: #b8bccc;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#postal-data {
+  padding: 0rem 1rem;
+}
+#postal-data > p {
+  padding-bottom: 8px;
+  color: rgba(184, 188, 204, 0.5);
+  font-family: Inter;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  position: relative;
+  line-height: normal;
+}
+#postal-data p span {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+#user-info span,
+#post-office span {
+  position: absolute;
+  right: 0;
+}
+#post-office h1 {
+  padding: 2rem 0;
+}
+#post-office {
+  padding: 0 1rem 1rem;
+}
+#search-input {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #575a85;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: #b8bccc;
+  border-radius: 4px;
+}
+#Post-office-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding-top: 1rem;
+}
+.post-card {
+  background-color: #575a85;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 6px;
+}
+.post-card p {
+  color: #b8bccc;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+}

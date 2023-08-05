@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="home-container">
+        <div id="left-slide">
+            <header>
+                <h1>Post Office Application</h1>
+                <p>This Application Allows you to extract information about the nearest Post Offices, based on your
+                    location.</p>
+            </header>
+            <div class="img-div">
+                <img src="./undraw_messenger_re_8bky.svg" alt="">
+            </div>
+        </div>
+        <div id="right-slide">
+            <h1>Your Current Ip Address is <span class="ip_addr"></span></h1>
+            <button id="btn">Get Started</button>
+        </div>
+    </div>
+    <div id="address-details-container">
+        <div id="map-container">
+            <h2 class="text-heading">IP Address:<span class="ip_addr">127.0.0.1</span></h2>
+            <div id="location">
+                <div class="row">
+                    <p>Lat: <br><span id="lat"></span></p>
+                    <p>Long: <br><span id="lon"></span></p>
+                </div>
+                <div class="row">
+                    <p>City: <br><span id="city"></span></p>
+                    <p>Region: <br><span id="reg"></span></p>
+                </div>
+                <div class="row">
+                    <p>Organization: <br><span id="org"></span></p>
+                    <p>HostName: <br><span id="host"></span></p>
+                </div>
+            </div>
+            <div class="map-frame">
+                <h1 class="text-heading">Your Current Location</h1>
+                <iframe id="map-frame" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+        <div id="user-info">
+            <h1 class="text-heading">More Information About You</h1>
+            <div id="postal-data">
+                <p>Time Zone: <span id="time-zone"></span></p>
+                <p>Date and Time: <span id="date-time-zone"></span></p>
+                <p>Pincode: <span id="pincode"></span></p>
+                <p>Message: <span id="message"></span></p>
+            </div>
+        </div>
+        <div id="post-office">
+            <h1 class="text-heading">Post Office Near You</h1>
+            <input type="search" id="search-input" placeholder="Search By Name" />
+            <div id="Post-office-container">
+                <div class="post-card">
+                    <p>Name: <span>Kodala</span></p>
+                    <p>Branch Type: <span></span></p>
+                    <p>Delivery Status</p>
+                    <p>District</p>
+                    <p>Division</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
