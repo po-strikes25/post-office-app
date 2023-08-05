@@ -14,36 +14,61 @@
 
 <body>
     <div id="home-container">
-        <div id="left-slide">
+        <div id="left-panel">
             <header>
                 <h1>Post Office Application</h1>
                 <p>This Application Allows you to extract information about the nearest Post Offices, based on your
                     location.</p>
             </header>
-            <div class="img-div">
+            <div class="img-container">
                 <img src="./undraw_messenger_re_8bky.svg" alt="">
             </div>
         </div>
         <div id="right-slide">
-            <h1>Your Current Ip Address is <span class="ip_addr"></span></h1>
+            <h1>Your Current Ip Address is
+                <span class="ip-address">
+                </span>
+            </h1>
             <button id="btn">Get Started</button>
         </div>
     </div>
     <div id="address-details-container">
         <div id="map-container">
-            <h2 class="text-heading">IP Address:<span class="ip_addr">127.0.0.1</span></h2>
+            <h2 class="text-heading">
+                IP Address:<span class="ip-address">127.0.0.1</span>
+            </h2>
             <div id="location">
                 <div class="row">
-                    <p>Lat: <br><span id="lat"></span></p>
-                    <p>Long: <br><span id="lon"></span></p>
+                    <p>Lat:
+                        <br>
+                        <span id="lat">
+                        </span>
+                    </p>
+                    <p>Long:
+                        <br>
+                        <span id="lon">
+                        </span>
+                    </p>
                 </div>
                 <div class="row">
-                    <p>City: <br><span id="city"></span></p>
-                    <p>Region: <br><span id="reg"></span></p>
+                    <p>City:
+                        <br>
+                        <span id="city">
+                        </span>
+                    </p>
+                    <p>Region: <br><span id="region"></span></p>
                 </div>
                 <div class="row">
-                    <p>Organization: <br><span id="org"></span></p>
-                    <p>HostName: <br><span id="host"></span></p>
+                    <p>Organization:
+                        <br>
+                        <span id="organization">
+                        </span>
+                    </p>
+                    <p>HostName:
+                        <br>
+                        <span id="host">
+                        </span>
+                    </p>
                 </div>
             </div>
             <div class="map-frame">
@@ -54,23 +79,24 @@
         <div id="user-info">
             <h1 class="text-heading">More Information About You</h1>
             <div id="postal-data">
-                <p>Time Zone: <span id="time-zone"></span></p>
-                <p>Date and Time: <span id="date-time-zone"></span></p>
-                <p>Pincode: <span id="pincode"></span></p>
-                <p>Message: <span id="message"></span></p>
+                <p>Time Zone:
+                    <span id="time-zone"></span>
+                </p>
+                <p>Date and Time:
+                    <span id="date-time-zone"></span>
+                </p>
+                <p>Pincode:
+                    <span id="pincode"></span>
+                </p>
+                <p>Message:
+                    <span id="message"></span>
+                </p>
             </div>
         </div>
         <div id="post-office">
             <h1 class="text-heading">Post Office Near You</h1>
             <input type="search" id="search-input" placeholder="Search By Name" />
             <div id="Post-office-container">
-                <div class="post-card">
-                    <p>Name: <span>Kodala</span></p>
-                    <p>Branch Type: <span></span></p>
-                    <p>Delivery Status</p>
-                    <p>District</p>
-                    <p>Division</p>
-                </div>
             </div>
         </div>
     </div>

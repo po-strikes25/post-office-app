@@ -10,31 +10,6 @@ html {
   transition: all 0.5 ease-in-out;
 }
 
-#home-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  height: 100%;
-}
-#left-slide {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-  background-color: #000;
-}
-#left-slide header {
-  padding: 0.5rem 1.5rem;
-}
-#left-slide header h1 {
-  padding-bottom: 0.5rem;
-  color: #575a85;
-}
-#left-slide header p {
-  color: #b8bccc;
-}
-.img-div {
-  height: 500px;
-  width: 100%;
-}
 img {
   height: 100%;
   width: 100%;
@@ -57,13 +32,34 @@ img {
 #right-slide h1 span {
   color: #fff;
 }
-#btn {
-  width: 250px;
-  height: 50px;
-  flex-shrink: 0;
-  background: #575a85;
+
+#home-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  height: 100%;
+}
+#left-panel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  background-color: #000;
+}
+#left-panel header {
+  padding: 0.5rem 1.5rem;
+}
+#left-panel header h1 {
+  padding-bottom: 0.5rem;
+  color: #575a85;
+}
+#left-panel header p {
   color: #b8bccc;
-  border: 1px solid #b8bccc;
+}
+.img-container {
+  height: 500px;
+  width: 100%;
+}
+
+#btn {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
@@ -71,6 +67,12 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 250px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #575a85;
+  color: #b8bccc;
+  border: 1px solid #b8bccc;
 }
 #address-details-container {
   display: none;
@@ -80,12 +82,7 @@ img {
 #map-container {
   width: 100%;
 }
-#map-container h2 {
-  padding: 2rem 1rem 0rem;
-  color: rgba(184, 188, 204, 0.5);
-  font-size: 2.125rem !important;
-  text-align: left !important;
-}
+
 #location {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -101,21 +98,28 @@ img {
   height: 100px;
 }
 #location .row > p {
-  padding-bottom: 5px;
-  font-family: Inter;
   font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding-bottom: 5px;
+  font-family: Inter;
 }
+#map-container h2 {
+  padding: 2rem 1rem 0rem;
+  color: rgba(184, 188, 204, 0.5);
+  font-size: 2.125rem !important;
+  text-align: left !important;
+}
+
 .map-frame {
-  padding: 0 2rem;
-  background-color: #575a85;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-bottom: 3rem;
+  padding: 0 2rem;
+  background-color: #575a85;
+  display: flex;
 }
 .map-frame h1 {
   padding: 1rem 0;
@@ -126,25 +130,61 @@ img {
   padding: 2rem 0;
 }
 .text-heading {
-  color: #b8bccc;
-  text-align: center;
-  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  color: #b8bccc;
+  text-align: center;
+  font-size: 3rem;
 }
 #postal-data {
   padding: 0rem 1rem;
 }
 #postal-data > p {
-  padding-bottom: 8px;
-  color: rgba(184, 188, 204, 0.5);
-  font-family: Inter;
-  font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   position: relative;
   line-height: normal;
+  padding-bottom: 8px;
+  color: rgba(184, 188, 204, 0.5);
+  font-family: Inter;
+  font-size: 2.125rem;
+}
+#post-office {
+  padding: 0 1rem 1rem;
+}
+#search-input {
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: #b8bccc;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #575a85;
+}
+#Post-office-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding-top: 1rem;
+}
+.post-card {
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #575a85;
+  display: flex;
+}
+.post-card p {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  color: #b8bccc;
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
 }
 #postal-data p span {
   font-size: 1.5rem;
@@ -157,40 +197,4 @@ img {
 }
 #post-office h1 {
   padding: 2rem 0;
-}
-#post-office {
-  padding: 0 1rem 1rem;
-}
-#search-input {
-  width: 100%;
-  height: 40px;
-  background-color: transparent;
-  border: 2px solid #575a85;
-  outline: none;
-  padding: 0 1rem;
-  font-size: 1rem;
-  color: #b8bccc;
-  border-radius: 4px;
-}
-#Post-office-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 20px;
-  padding-top: 1rem;
-}
-.post-card {
-  background-color: #575a85;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  border-radius: 6px;
-}
-.post-card p {
-  color: #b8bccc;
-  font-size: 1.3rem;
-  padding: 0.5rem 0;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  position: relative;
 }
