@@ -83,10 +83,14 @@ img {
   width: 100%;
 }
 
+#organization {
+  
+}
+
 #location {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
   gap: 5px;
 }
 #location .row span {
@@ -124,6 +128,11 @@ img {
 .map-frame h1 {
   padding: 1rem 0;
 }
+
+#user-info {
+  padding: 2rem;
+}
+
 #user-info h1 {
   text-align: center;
   vertical-align: middle;
@@ -151,7 +160,7 @@ img {
   font-size: 2.125rem;
 }
 #post-office {
-  padding: 0 1rem 1rem;
+  padding: 0 2rem;
 }
 #search-input {
   outline: none;
